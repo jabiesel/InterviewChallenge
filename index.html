@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Challenge</title>
+    <!-- Include Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Include custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script>
+      // Check if URL parameter is present
+      const urlParams = new URLSearchParams(window.location.search);
+      const myParam = urlParams.get('message');
+  
+      if (myParam) {
+        // Show an alert if parameter is present
+        alert(myParam);
+      }
+    </script>
+
+    <!-- Header section -->
+    <header>
+      <nav class="nav">
+        <a class="nav-link active" href="https://ironsoftware.com/">
+          <img src="images/navbar.svg" alt="IronSoftware logo" class="mt-n1" />
+        </a>
+        <a class="nav-link" href="#">PRODUCTS ▾</a>
+        <a class="nav-link" href="https://ironsoftware.com/about-us/"
+          >ABOUT US</a
+        >
+        <a class="nav-link" href="https://ironsoftware.com/careers/">CAREER</a>
+        <button
+          class="navbar-toggler ml-auto"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="https://ironsoftware.com/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">PRODUCTS ▾</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://ironsoftware.com/about-us/"
+                >ABOUT US</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://ironsoftware.com/careers/"
+                >CAREER</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Title section -->
+    <section class="title">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="images/ironPDF.svg" alt="ironPDF" />
+            <p class="">
+              <span class="semi-big-text"
+                >Building on the success of IronPDF for .NET</span
+              >
+            </p>
+            <h1>Beta Software Program</h1>
+            <h1><span class="purple-text">IronPDF for C++</span></h1>
+            <p><span class="coming-soon">Coming soon</span></p>
+          </div>
+          <div class="col-md-6">
+            <img src="images/Cimage.svg" alt="C++/Rainbowlogo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Email-top section -->
+    <section class="email-top" id="submit-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h1>Be one of the first</h1>
+            <p>
+              <span class="semi-big-text">Sign up NOW to get early access!</span>
+            </p>
+            <form action="/submit-email" method="post">
+              <div class="input-group">
+                <input
+                  type="email"
+                  class="form-control rounded-pill"
+                  name="email"
+                  placeholder="Enter email address"
+                  aria-label="Email"
+                  id="email"
+                />
+                <span class="input-group-btn">
+                  <button
+                    class="btn btn-primary rounded-pill"
+                    type="submit"
+                    style="
+                    --bs-btn-padding-y: 1rem;
+                    --bs-btn-padding-x: 2.5rem;
+                    --bs-btn-font-size: 1rem;
+                  "
+                  >
+                    Sign up now ▸
+                  </button>
+                </span>
+              </div>
+            </form>
+            <div class="coming-soon-wrapper">
+              <div class="coming-soon-content">
+                <img src="images/comingsoon.svg" alt="Coming Soon" />
+                <p class="padded-text">
+                  IronPDF Beta Program also coming soon for <b>Python</b> |
+                  <b>Node.JS</b> | <b>Java</b>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+<!-- Features section -->
+<section class="features">
+  <div class="container">
+    <div class="text-center">
+      <div class="header-wrapper">
+        <h1 class="pb-4">
+          IronPDF for C+<span>+</span>
+          <img src="images/badge.svg" alt="Badge" />
+        </h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="statements">
+          <p>
+            <b>#</b> Generate PDFs from HTML in C++ &emsp;&emsp; <span class='divider'>|</span> &emsp;&emsp;
+            <b>#</b> Combine, split, and modify PDFs quickly in C++ &emsp;&emsp; <span class='divider'>|</span> &emsp;&emsp;
+            <b>#</b> Extract text and images from PDFs using C++
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="pdf-info">
+      <p>
+        The new <span class="small-bold">IronPDF library for C++</span> will
+        enhance the C++ developer’s tool set with robust PDF generation and
+        conversion capabilities. Developers will be able to generate new
+        PDFs from HTML content (from text or from URL), as well as to
+        combine, split, extract, and modify content from existing PDFs.
+      </p>
+      <p>
+        <span class="small-bold">IronPDF for C++</span> will help developers
+        create C++ applications that can do all of these PDF processing
+        tasks and more, with speed, precision, control, and excellence.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+    <!-- Explanation section -->
+    <section class="explnation">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <img
+            src="images/htmlPDF.svg"
+            alt="htmlPDF"
+            class="float-left img-fluid scaled-image"
+            width="270.17"
+            height="179.51"
+          />
+          </div>
+          <div class="col-md-8">
+            <h1 class="pb-3">
+              Why make a <span class="purple-text">C++ PDF Library</span>
+            </h1>
+            <p>
+              C++ is one of the most popular, oldest, and important programming
+              languages in use, being the language of choice in low-level
+              systems and network programming and other domains where
+              performance is critical.
+            </p>
+            <p>
+              The release of IronPDF for C++ will aid developers in building
+              performant applications that can carry out PDF-related processing
+              tasks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Early Access section -->
+    <section class="early-access">
+      <div class="container">
+        <h1 class="pb-4">
+          Early Access to <span class="purple-text">C++ PDF Library</span>
+        </h1>
+        <p class="gradient-text">
+          Joining the early access program will allow you to collaborate closely
+          with our engineering team. You will be playing a key role in the
+          development process as you share your early experiences using the C++
+          PDF library before its official launch. Your continual feedback after
+          we release the library will be immensely helpful as we release new
+          features and improve on existing features.
+        </p>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="product pt-3">
+              <img
+                src="images/card1.svg"
+                alt="Product Image"
+                width="350"
+                height="350"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product pt-3">
+              <img
+                src="images/card2.svg"
+                alt="Product Image"
+                width="350"
+                height="350"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="product pt-3">
+              <img
+                src="images/card3.svg"
+                alt="Product Image"
+                width="350"
+                height="350"
+                class="img-fluid"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Email-bottom section -->
+    <section class="email-bottom">
+      <div class="container">
+        <h2 class="text-center pb-3">
+          Sign up to our <span class="purple-text">Beta Program</span>
+        </h2>
+        <div class="row justify-content-center">
+          <div class="col-md-3">
+            <div class="text-center">
+              <div class="input-group">
+                <form action="/submit-email" method="post">
+                <input
+                  name="email"
+                  type="email"
+                  class="form-control rounded-pill border-right-0"
+                  placeholder="Enter email address"
+                />
+                  <button
+                    class="btn btn-primary rounded-pill border-left-0"
+                    type="submit"
+                  >
+                    Sign up now ▸
+                  </button>
+                </div>
+              </div>
+            </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+      integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.min.js"
+      integrity="sha384-Y4oOpwW3duJdCWv5ly8SCFYWqFDsfob/3GkgExXKV4idmbt98QcxXYs9UoXAB7BZ"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <!-- Footer section -->
+  <footer></footer>
+</html>
